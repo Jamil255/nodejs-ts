@@ -1,7 +1,7 @@
-import express from "express";
-import { signupControllers } from "../controllers/index.js";
-const app = express();
+import express from 'express'
+import { loginControllers, signupControllers } from '../controllers/index.js'
+const router = express.Router()
+router.post('/registar', signupControllers) 
+router.post('/login', loginControllers)
 
-app.post("/all",signupControllers)
-
-export default app
+export default router

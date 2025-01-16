@@ -1,5 +1,4 @@
 {
-  
   "name": "coding",
   "version": "1.0.0",
   "description": "",
@@ -15,12 +14,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
+    "@types/mongodb": "^4.0.7",
     "@types/node": "^22.10.6",
     "concurrently": "^9.1.2",
     "typescript": "^5.7.3"
