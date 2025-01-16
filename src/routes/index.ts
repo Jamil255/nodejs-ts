@@ -1,7 +1,7 @@
 import express from "express";
-import { allUserController } from "../controllers/index.js";
+import { signupControllers } from "../controllers/index.js";
 const app = express();
 
-app.get("/all",allUserController)
+app.post("/all",signupControllers)
 
 export default app

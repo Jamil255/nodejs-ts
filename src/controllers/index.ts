@@ -1,10 +1,12 @@
 import { Request, Response } from 'express'
 
-const allUserController = async (req: Request, res: Response) => {
-  const userData: string[] = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+const signupControllers = async (req: Request, res: Response) => {
+  const { name, email, password } = req.body
+  if (!email || !name || !password)
+    return res.status(400).json({ message: 'all fields is required' })
   res.json({
-    users: userData,
+    message: 'success',
   })
 }
 
-export { allUserController }
+export { signupControllers }
